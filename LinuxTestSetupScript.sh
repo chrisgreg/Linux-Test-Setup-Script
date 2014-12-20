@@ -75,8 +75,6 @@ Given I have isntalled all the prerequisites required for cucumber
 When I run this cucumber test
 Then it should run the demo feature file
 EOF
-echo "should of made that file after this"
-pwd
    cucumber
 fi
 
