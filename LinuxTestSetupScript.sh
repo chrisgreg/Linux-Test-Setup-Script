@@ -34,8 +34,12 @@ echo "**** Installing rubygems:"
 rvm rubygems current
 
 echo
-echo "**** Installing Cucumber:"
+echo "**** Installing Cucumber and Bundler:"
 gem install cucumber
+
+apt-get install cucumber -y
+
+apt-get install bundler -y
 
 read -p "Would you like to test cucumber?" -n 1 -r
 echo
@@ -59,7 +63,7 @@ EOF
    echo "***** Bundle install..."
    gem install bundler
    bundle install
-   
+   bundle update 
 
    echo 
    echo 
