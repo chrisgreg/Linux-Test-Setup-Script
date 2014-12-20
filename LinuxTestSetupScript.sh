@@ -3,15 +3,7 @@ echo "*************************"
 
 echo "***** Upgrading *****"
 apt-get -y --force-yes update && apt-get -y --force-yes upgrade
-
 echo "*************************"
-
-echo
-echo "***** zsh:"
-apt-get install zsh
-apt-get install git-core
-wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -0 - | zsh
-chsh -s 'which zsh'
 
 echo 
 echo "***** curl:"
