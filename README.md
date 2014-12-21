@@ -3,7 +3,7 @@ Linux-Test-Setup-Script
 
 Run by executing:
 
-sudo ./LinuxTestSetupScript.sh
+./LinuxTestSetupScript.sh
 
 Installs:
  - curl
