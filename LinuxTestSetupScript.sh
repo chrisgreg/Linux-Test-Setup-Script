@@ -2,12 +2,12 @@
 echo "*************************"
 
 echo "***** Upgrading *****"
-apt-get -y --force-yes update && apt-get -y --force-yes upgrade
+sudo apt-get -y --force-yes update && sudo apt-get -y --force-yes upgrade
 echo "*************************"
 
 echo 
 echo "***** curl:"
-apt-get install curl
+sudo apt-get install curl
 
 echo 
 echo "**** rvm:"
@@ -37,10 +37,12 @@ echo
 echo "**** Installing Cucumber and Bundler:"
 gem install cucumber
 
-apt-get install cucumber -y
+sudo apt-get install cucumber -y
 
-apt-get install bundler -y
+sudo apt-get install bundler -y
 
+echo
+echo
 read -p "Would you like to test cucumber?" -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
@@ -85,5 +87,5 @@ fi
 echo
 echo
 echo "Setup script complete"
-
+echo
    
